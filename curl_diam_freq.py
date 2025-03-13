@@ -221,7 +221,7 @@ for i in range(num_samples_to_display):
     ax_text.axis('off')  # No axis for the text area
     ax_text.text(
         0, 0.5,  
-        f"Image Name: {image_name}\n\n"
+        # f"Image Name: {image_name}\n\n"
         f"Predicted:\n   - Diameter: {y_pred_rescaled[i][0]:.2f}\n   - Frequency: {y_pred_rescaled[i][1]:.2f}\n\n"
         f"Actual:\n   - Diameter: {y_test_rescaled[i][0]:.2f}\n   - Frequency: {y_test_rescaled[i][1]:.2f}",
         fontsize=10, verticalalignment="center"
