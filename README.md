@@ -55,3 +55,19 @@ While work is in progress, early experiments have shown promising results in cap
    ```bash
    git clone https://github.com/yourusername/cnn-hair-parameter-prediction.git
    cd cnn-hair-parameter-prediction
+
+  ## Create and Activate a Virtual Environment  
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+pip install -r requirements.txt
+
+## training model
+python train.py --config configs/train_config.yaml
+
+
+## Acknowledgments
+Special thanks to the SAIL Stanford lab!
+
