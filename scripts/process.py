@@ -269,7 +269,7 @@ def process_images(opt):
         
         # Extract patches
         if not opt.skip_patch_extraction:
-            patch = get_hair_patch(masked, hair_mask, opt.patch_size)
+            patch = get_hair_patch(resized, hair_mask, opt.patch_size)
             if patch is not None:
                 cv2.imwrite(os.path.join(opt.patches_dir, img_name), 
                           patch)
