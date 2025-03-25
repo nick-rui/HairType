@@ -20,12 +20,12 @@ Rendering hair, especially curly hair, in 3D environments poses unique challenge
 - Increased workload for artists trying to manually correct or enhance generated hair models.  
 
 ## Approach  
-Our solution is to employ CNN models to predict hair parameters from input images or 3D scans. Key elements of our approach include:  
+Our solution is to experiment with CNN models to predict hair parameters from input images. Key elements of our approach include:  
 
 ### Data Collection & Preprocessing  
 - Gather diverse datasets covering a wide range of hair types and curl patterns.  
 - Annotate the data with key hair parameters (e.g., curl type, density, direction, frizz).  
-- Preprocess images to enhance features relevant for prediction.  
+- Extract masked images and high-contrast hair patches and determine which type of data a model would best train on.
 
 ### CNN Architecture  
 - Design and train convolutional neural networks tailored for hair parameter extraction.  
@@ -47,8 +47,8 @@ While work is in progress, early experiments have shown promising results in cap
 
 ### Prerequisites  
 - Python 3.8 or higher  
-- Deep Learning Framework: [TensorFlow](https://www.tensorflow.org/) or [PyTorch](https://pytorch.org/)  
-- Common libraries: NumPy, OpenCV, Matplotlib, scikit-learn  
+- Deep Learning Framework: [TensorFlow](https://www.tensorflow.org/) and [PyTorch](https://pytorch.org/)  
+- Common libraries: NumPy, OpenCV, Matplotlib, scikit-learn 
 
 ### Installation  
 1. Clone the repository:  
